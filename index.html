@@ -22,6 +22,7 @@
         margin-left: auto;
         margin-right: auto;
         border-radius: 20px;
+        width: 300px;
     }
     .imagem{
         padding-top: 40px;
@@ -39,8 +40,14 @@
 <body>
     <h1>Massimus,</h1>
 
+    
     <div class="imagem">
-        <img src="geek.png" alt="Hyuuga">
+        <picture>
+            <source media= "(min-width: 300px)" srcset="geek.png">
+            <img src="geek.png" alt="Hyuuga">
+
+        </picture>
+       
     </div>
      
 </body>
